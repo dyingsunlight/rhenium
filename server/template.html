@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> {{ title }} </title>
+  <link rel="stylesheet" href="/aboutReader.css">
+</head>
+<body>
+<div class="header reader-header reader-show-element">
+  <h1 class="reader-title"> {{ title }} </h1>
+  <div class="credits reader-credits">{{ byline }} </div>
+</div>
+<div class="moz-reader-content reader-show-element">
+  <figure>
+    <div role="button" tabindex="0">
+      <picture>
+        <source type="image/webp">
+        <source data-testid="og">
+        <img alt="" role="presentation" src="{{ ogImage }}" class="moz-reader-block-img" moz-reader-center="true" width="700" height="250">
+      </picture>
+    </div>
+  </figure>
+  {{ body }}
+</div>
+</body>
+</html>
